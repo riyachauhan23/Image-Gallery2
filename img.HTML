@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="img.CSS">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">Image Gallery</h1>
+    </header>
+
+    <div class="gallery-container">
+        <div class="thumbnail-grid">
+            <!-- Yahan pe data-description mein description likha hai -->
+            <img src="bbyc.webp" alt="Image 1" class="thumbnail" data-description="">
+            <img src="bal.jpg" alt="Image 2" class="thumbnail" data-description="">
+            <img src="bby.jpg" alt="Image 3" class="thumbnail" data-description="">
+            <img src="bby2.jpg" alt="Image 4" class="thumbnail" data-description="">
+            <img src="rk.jpg" alt="Image 5" class="thumbnail" data-description="">
+            <img src="rk2.jpg" alt="Image 6" class="thumbnail" data-description="">
+            <img src="rk3.jpg" alt="Image 7" class="thumbnail" data-description="">
+            <img src="ras.jpg" alt="Image 8" class="thumbnail" data-description="">
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption" class="caption"></div>
+        <a class="prev" id="prev">&#10094;</a>
+        <a class="next" id="next">&#10095;</a>
+    </div>
+
+    <script src="img.js"></script>
+</body>
+</html>
